@@ -1,0 +1,556 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/*MENU*/
+.panner  > header > div{
+    /*background-color: #71bab1;*/
+    background-image: url("../images/05.jpg");
+    background-size: 100%;
+
+    /*position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+    /*top: 0; /*Nằm trên cùng*/
+    /*left: 0; /*Nằm sát bên trái*/
+    /*z-index: 100000; /*Hiển thị lớp trên cùng*/ 
+}
+.panner > header > div > ul{
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-inline-start-width: 200px;
+    float: right;
+}
+.panner > header > div > ul > li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    min-width: 190px; 
+}
+.panner > header > div > ul > li >a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+}
+.panner > header > div > ul > li > a:hover{
+    color: rgb(255, 255, 255);
+}
+.panner > header > div > ul > li > a > i {
+    font-size: 15px;
+}
+
+.panner > header > div > a > img{
+    width: 15%;
+    margin-left: 55px;
+    margin-bottom: 5px;
+    /*border-right-style: outset;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.479);
+    padding-right: 80px;*/
+}
+.panner > header > div{
+    border-bottom-style: outset;
+    border-width: 1px;
+    border-color:  rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 1199px){
+    .panner > header > div > ul > li{
+        min-width: 155px;
+        padding-top: 12px;
+    }
+    .panner > header > div > ul > li:last-child{
+        min-width: 130px;
+    }
+    .panner > header > div > ul > li > a{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 996px){
+    .panner > header > div > ul > li{
+        min-width: 138px;
+        padding-top: 12px;
+    }
+    .panner > header > div > ul > li:last-child{
+        min-width: 80px;
+    }
+    .panner > header > div > ul > li > a > i{
+        font-size: 13px;
+    }
+    .panner > header > div > ul > li > a{
+        font-size: 10px;
+    }
+    .panner > header > div > a > img{
+        width: 13%;
+        margin-right: 0px;
+    }
+}
+
+/*@media screen and (max-width: 767px){
+    cho menu dọc
+}*/
+
+/*SUBMENU*/
+.submenu{
+    list-style-type: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(255, 255, 228);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px !important;
+    margin-left: 30px;
+    transition: opacity ease-in-out 0.25s;
+    transition-delay: 0.25s;
+}
+.menu:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+.submenu > li > a{
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.644);
+    font-weight: 300;   
+}
+.submenu > li > a:hover{
+    color: black;
+}
+
+
+/* VI VU BÌNH THẠNH */
+.subpanner{
+    background-image: url(../images/banner\ BinhThanh.jpg);
+    background-size: 100%;
+    height: 310px;
+    box-sizing: border-box;
+    padding: 70px;
+}
+.title > h2 {
+    transition: transform ease-in-out 0.5s;
+    font-weight: 500;
+    font-size: 50px;
+}
+.title > h2:hover {
+    transform: scale(1.2, 1.2);
+}
+.subpanner > span {
+    padding-top: 10px;
+}
+div.title > h2{
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+section.subpanner > span{
+    text-align: center;
+    display: block;
+}
+section.subpanner > span > a{
+    font-size: 14px;
+    text-decoration-line: none;
+    color: rgb(141, 141, 141);
+    
+}
+section.subpanner > span > a:hover{
+    color: black;
+}
+span.address{
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+span.slash{
+    color: rgb(141, 141, 141);
+}
+.container > div > p {
+    font-size: 16px;
+    
+}
+/*marketing*/
+div.left {
+    width: 63%;
+    float: left;
+    padding-top: 0px;
+}
+.container{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.container > div > h3{
+    font-weight: 600;
+}
+div.line{
+    margin-top: 50px;
+    height: 1px;
+    width: 40%;
+    background-color: #71bab1;
+}
+#line2 {
+    margin-top: 0px;
+    height: 1px;
+    width: 40%;
+    background-color: #71bab1;
+}
+/*content*/
+section.content > div.left > h3 {
+    font-weight: 600;
+}
+.content{
+    margin: 80px 20px;
+}
+.left > p {
+    font-size: 16px;
+}
+
+
+.contentImg img {
+    width: 100%;
+}
+#mainImg {
+    padding-top: 40px;
+}
+#contentImg {
+    width: 70px;
+}
+
+.contentImg > div.thumbnailFlex > div.images {
+    display: flex;
+}
+div.thumbnailFlex > div > img {
+    padding: 10px;
+}
+.contentImages > div > h2 {
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contentImages > div > div > p {
+    color: #808080;
+    font-size: 16px;
+    margin-top: 5px;
+}
+div.images {
+    width: 80%;
+    margin: 5%;
+}
+div.images > div {
+    width: 20%;
+    transition: transform ease-in-out 0.3s;
+}
+div.images > div:hover {
+    transform: scale(1.2 , 1.2);
+}
+div.images > div > img {
+    padding: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+div.img {
+    padding-bottom: 50px;
+}
+.contentImages > div.NoiDungAnh { /* BG TRẮNG DƯỚI THÔNG TIN ẢNH */
+    background-color: white;
+    height: 500px;
+}
+.images img {
+    cursor: pointer;
+}
+div.img {
+    cursor: pointer;
+}
+.NoiDungAnh {
+    display: none;
+}
+ /*thẻ*/
+.treotag > div > img{
+    z-index: 10;
+    float: right;
+    height: 450px;
+    position: fixed;
+    right: 60px;
+    bottom: 50px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.treotag > div > img:hover{
+    transform: scale(0.95, 0.95);
+}
+
+/*content2*/
+.content2{
+    margin: 50px 0;
+    clear: both;
+}
+.left2{
+    width: 40%;
+    float: left;
+    margin-left: 90px;
+    background-color: rgb(235, 235, 235);
+    position: relative;
+    height: 350px;
+    margin-bottom: 30px;
+    border-radius: 10px;   
+}
+.left2 > img{
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: 20px;
+    border-radius: 10px;
+    height: 370px;
+    box-shadow: 2px 2px 10px -2px black;
+}
+.left2 > .ltext{
+    float: right;
+    width: 35%;
+    margin-right: 2%;
+}
+.ltext > h4{
+    color: red;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.right2{
+    width: 40%;
+    float: right;
+    background-color: rgb(235, 235, 235);
+    position: relative;
+    margin-right: 90px;
+    height: 350px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.right2 > div > h4{
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    clear: left;
+    margin-bottom: 0 !important;
+}
+.right2 > .rtext > p{
+    float: left;
+    min-width: 120px;
+    margin: 10px 20px;
+    margin-bottom: 10px;
+}
+.rtext > p > i{
+    color: rgb(187, 0, 0);
+    padding: 5px;
+}
+.right2 > .rtext > p:last-child{
+    clear: right;
+}
+.rtext2 > h4{
+    margin-top: 20px;
+}
+.right2 > img{
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0 ;
+}
+.rtext2 > a > img{
+    margin-left: 20px;
+    width: 20%;
+    box-shadow: 2px 2px 10px -6px black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.rtext3 > img{
+    width: 15%;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+.rtext3 > img:nth-last-child(){
+    clear: right;
+}
+.rtext3 > h4{
+    color: black !important;
+    font-weight: unset !important;
+    font-size: 16px;
+}
+.rtext3 > div > p{
+    margin: 10px 20px;
+    float: left;    
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.rtext3 > div{
+    clear: left;
+}
+
+/* CSS FOOTER */
+section > footer.footer {
+    background-color: #00A99D;
+    clear: both;
+}
+div.col50 > div > img { /* LOGO */
+    width: 65%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    transition: transform 0.5s;
+}
+div.col50 > div > img:hover{
+    transform: scale(1.15 , 1.15);
+}
+div.col25 {
+    width: 25%;
+}
+div.col50 {
+    width: 50%;
+}
+footer.footer > div {
+    display: flex;
+}
+h2#sloganId {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 30px;
+}
+div.col50 > p {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+
+} 
+div.col50 {
+    text-align: center;
+}           
+div.col25 {
+    text-align: center;
+} 
+footer.footer > section { /*GOM  NHÓM FOOTER */
+    display: flex;
+}
+h2#ttlhId { /* LIÊN HỆ VỚI CHÚNG TÔI */
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+div.col25 > ul {
+    list-style-type: none;
+}
+div.col25 > ul > li > h4 {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+div.col25 > div {
+    padding-top: 10px;
+}
+#followId {
+    text-align: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    margin: 4px;
+}
+
+.col25 > ul.icons {
+    display: flex;
+}
+ul.icons {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+ul.icons > li.icon {
+    color: #1d1d1d !important;
+    border-radius: 5px;
+    font-size: 22px;
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    margin: 5px;
+}
+ul.icons > li.icon:hover { /* NỔI ICONS MẠNG XÃ HỘI*/
+    transform: scale(1.05 , 1.05);
+}
+ul.icons > li.icon > a > i {
+    color: black;
+}
+.col25 > div > img {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    margin: 0;
+    padding-bottom: 0;
+}
+div.col25 > div {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+div#apps {
+    padding-left: 83px;
+}
+div#apps > a > img {
+    border-radius: 7px;
+    margin-bottom: 20px;
+    transition: transform ease-in-out 0.3s;
+}
+div#apps > a > img:hover {
+    transform: scale(1.05 , 1.05);
+}
+
+p.lastInfo {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+
+
+/*GO TO TOP*/
+.gototop{
+
+    width: 45px;
+    height: 45px;
+    background: url(../images/gototop.png) no-repeat center center #000;
+    background-size: 100%;
+    border:2px solid #fff;
+    position: fixed;
+    z-index: 1989;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 90px;
+}
+.gototop:hover{
+    opacity: 1;
+}

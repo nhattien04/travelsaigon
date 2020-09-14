@@ -1,0 +1,536 @@
+body{
+    /*background-color: lavender;*/
+    margin: 0;
+    background-image: url("../images/05.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.panner  > header > div{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.03));
+    position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+    top: 0; /*Nằm trên cùng*/
+    left: 0; /*Nằm sát bên trái*/
+    z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+.panner > header > div > ul{
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-inline-start-width: 200px;
+    float: right;
+}
+.panner > header > div > ul > li{
+    width: 100%;
+    text-align: center;
+    min-width: 200px; 
+}
+.panner > header > div > ul > li >a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    padding: 20px 0;
+}
+.panner > header > div > ul > li > a:hover{
+    color: rgb(255, 255, 255);
+}
+.panner > header > div > ul > li > a > i {
+    font-size: 15px;
+}
+.panner > img{
+    width: 65%;
+    display: block;
+    margin: 100px auto;
+}
+.panner > header > div > a > img{
+    margin-left: 30px;
+    width: 15%;
+    /*border-right-style: outset;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.479);
+    padding-right: 80px;*/
+}
+
+/*subMENU*/
+.submenu{
+    list-style-type: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(255, 255, 228);
+    border-radius: 5px;
+    padding: 10px 20px;
+        margin-left: 30px;
+    transition: opacity ease-in-out 0.25s;
+    transition-delay: 0.25s;
+}
+.menu:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+.submenu > li > a{
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.644);
+    font-weight: 300;   
+}
+.submenu > li > a:hover{
+    color: black;
+}
+/*GO TO TOP*/
+
+.gototop{
+    width: 40px;
+    height: 40px;
+    background: url(../images/gototop.png) no-repeat center center #000;
+    background-size: 100%;
+    border:2px solid #fff;
+    position: fixed;
+    z-index: 90px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 90px;
+}
+.gototop:hover{
+    opacity: 1;
+}
+
+/*section.panner > img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}*/
+/*CSS SELECTION 
+selection.panner {
+    padding: 10px;
+}
+ul.menu1 > li > a {
+    padding: 10px;
+
+}
+ul.menu1 > li.submenu > ul {
+    background-color: lavender;
+    border-radius: 5px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+li.submenu > ul > li > a {
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    text-decoration: none;
+    margin: 11px auto;
+    color: rgba(10, 0, 0, 0.671);
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+li.submenu > ul {
+    list-style-type: none;
+}
+.submenu > ul {
+    display: none; /* Ẩn đi menu cho tới khi rê chuột lên */
+
+/*.submenu:hover .subcontent {
+    display: block !important; /*Hiện lên khôi menu dọc khi rre chuột lên */
+
+
+/* CSS TỪ PHẦN NỘI DUNG*/
+.cuon{
+    z-index: 10;
+    background-color: white;
+    border-radius: 20px;
+}
+h1#tieude1Id {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    padding: 20px;
+} 
+p#content1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+} 
+
+div.why {
+    width: 25%;
+    text-align: center; 
+    margin: 1.5%;
+}
+div.why > p.danhmucId {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+div.why > img {
+    transition: transform ease-in-out 0.2s;
+}
+div.why > p.danhmucId:hover {
+    color: #00A99D;
+}
+div.why > img:hover {
+    transform: scale(1.15 , 1.15);
+}
+div.why > p.thongtinId {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+section#CacdanhmucId {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+}
+/* CSS PHẦN PANNER THỨ 2 */
+section#panner2 { /* PANNER 2 */
+    background-image: url(../images/saigon5_1.jpg)
+}
+h1#tieude2Id {  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    padding: 40px;
+    color: white;
+}
+section#panner2 > div { /* LỚP PHỦ MÀU XANH TRÊN PANNER 2 */
+    background-color: #00A99D 70% !important;
+}
+
+section#panner2 > div > img {
+    width: 100%;
+    height: 40%;
+}
+section#panner2 > div > p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: white;
+    padding-bottom: 65px;
+}
+
+/* CSS NHỮNG ĐỊA ĐIỂM DU LỊCH HÀNG ĐẦU */
+.new {
+    width: 33.33%;
+    float: left;
+    height: 650px;
+}
+div.new > div.wrapnews > a > img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform ease-in-out 0.3s;
+}
+
+/* CSS CONTENT */
+.wrapnews > a > img {
+    width: 100%;
+}
+.content{
+    margin: 80px 20px;
+}
+.news{
+    
+    width: 1170px;
+    margin: auto;
+}
+
+.new{
+    width: 33.33%;
+    float: left;
+    height: 650px;
+}
+.new > div.wrapnews{
+    margin: 30px 20px;
+}
+.new > div.wrapnews > a > img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform ease-in-out 0.3s;
+}
+.new > div.wrapnews > a > img:hover{
+    transform: scale(1.05 , 1.05);
+}
+div.info > a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: text-shadow ease-in-out 0.1s;
+    padding: 5px 0;
+}
+div.info > a:hover{
+    text-shadow: 3px 3px rgb(192, 192, 192);
+}
+div.info > p{
+    color: gray;
+    margin: 0;
+    margin-top: 5px !important;
+}
+.new > .lines {
+    width: 60%;
+    height: 1px;
+    background-color: rgb(221, 221, 221);
+    margin: 30px auto;
+}
+section#CacDiaDiemId {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+}
+
+/*content2*/
+.content2{
+    margin: 50px 0;
+    clear: both;
+}
+.left2{
+    width: 40%;
+    float: left;
+    margin-left: 90px;
+    background-color: rgb(235, 235, 235);
+    position: relative;
+    height: 350px;
+    margin-bottom: 30px;
+    border-radius: 10px;   
+}
+.left2 > img{
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: 20px;
+    border-radius: 10px;
+    height: 370px;
+    box-shadow: 2px 2px 10px -2px black;
+    transition: transform 0.3s ease-in-out;
+}
+.left2 > img:hover{
+    transform: scale(1.03, 1.03);
+}
+.left2 > .ltext{
+    float: right;
+    width: 35%;
+    margin-right: 2%;
+}
+.ltext > h4{
+    color: red;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.right2{
+    width: 40%;
+    float: right;
+    background-color: rgb(235, 235, 235);
+    position: relative;
+    margin-right: 90px;
+    height: 350px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.right2 > div > h4{
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    clear: left;
+    margin-bottom: 0 !important;
+}
+.right2 > .rtext > p{
+    float: left;
+    min-width: 120px;
+    margin: 10px 20px;
+    margin-bottom: 10px;
+}
+.rtext > p > i{
+    color: rgb(187, 0, 0);
+    padding: 5px;
+}
+.right2 > .rtext > p:last-child{
+    clear: right;
+}
+.rtext2 > h4{
+    margin-top: 20px;
+}
+.right2 > img{
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0 ;
+}
+.rtext2 > a > img{
+    margin-left: 20px;
+    width: 20%;
+    box-shadow: 2px 2px 10px -6px black;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.rtext2 > a > img:hover{
+    transform: scale(1.04, 1.04);
+}
+.rtext3 > img{
+    width: 15%;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+.rtext3 > img:nth-last-child(){
+    clear: right;
+}
+.rtext3 > h4{
+    color: black !important;
+    font-weight: unset !important;
+    font-size: 16px;
+}
+.rtext3 > div > p{
+    margin: 10px 20px;
+    float: left;    
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.rtext3 > div{
+    clear: left;
+}
+
+
+/* CSS FOOTER */
+section > footer.footer {
+    background-color: #00A99D;
+    clear: both;
+}
+div.col50 > div > img { /* LOGO */
+    width: 65%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    transition: transform 0.5s;
+}
+div.col50 > div > img:hover{
+    transform: scale(1.15 , 1.15);
+}
+div.col25 {
+    width: 25%;
+}
+div.col50 {
+    width: 50%;
+}
+footer.footer > div {
+    display: flex;
+}
+h2#sloganId {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 30px;
+}
+div.col50 > p {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+
+} 
+div.col50 {
+    text-align: center;
+}           
+div.col25 {
+    text-align: center;
+} 
+footer.footer > section { /*GOM  NHÓM FOOTER */
+    display: flex;
+}
+h2#ttlhId { /* LIÊN HỆ VỚI CHÚNG TÔI */
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+div.col25 > ul {
+    list-style-type: none;
+}
+div.col25 > ul > li > h4 {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+div.col25 > div {
+    padding-top: 10px;
+}
+#followId {
+    text-align: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    margin: 4px;
+}
+
+.col25 > ul.icons {
+    display: flex;
+}
+ul.icons {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+ul.icons > li.icon {
+    color: #1d1d1d !important;
+    border-radius: 5px;
+    font-size: 22px;
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    margin: 5px;
+}
+ul.icons > li.icon:hover { /* NỔI ICONS MẠNG XÃ HỘI*/
+    transform: scale(1.05 , 1.05);
+}
+ul.icons > li.icon > a > i {
+    color: black;
+}
+.col25 > div > img {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    margin: 0;
+    padding-bottom: 0;
+}
+div.col25 > div {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+div#apps {
+    padding-left: 83px;
+}
+div#apps > a > img {
+    border-radius: 7px;
+    margin-bottom: 20px;
+    transition: transform ease-in-out 0.3s;
+}
+div#apps > a > img:hover {
+    transform: scale(1.05 , 1.05);
+}
+
+p.lastInfo {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
